@@ -5,7 +5,7 @@ class Solution {
       if (carry == 0) {
         return xor;
       } else {
-        return getSum(xor, carry << 1);
+        return getSum(xor, (carry & 0xffffffff << 1);
       }
     }
 }
